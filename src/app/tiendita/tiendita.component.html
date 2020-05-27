@@ -1,0 +1,12 @@
+<div class="uno">
+    <br><br><br>
+<div class="dos" *ngFor="let obj of Botanas;"><!--ngfor se utuliza para ciclos-->
+    <h1>
+        <img src={{obj.imagen}} width="180" height="130">
+        
+        {{obj.nombre}} <br>
+        {{obj.precio | currency}}
+    </h1>
+    <hr>
+</div>
+</div>

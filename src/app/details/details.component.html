@@ -1,0 +1,19 @@
+<div class="uno">
+    <br><br><br><br><br><br>
+    <div class="dos" *ngIf="articulo">
+        <h1>
+            nombre: {{articulo.nombre}} <br>
+            modelo: {{articulo.modelo}} <br>
+            precio: {{articulo.precio | currency}} mxn  <br>
+            almacenamiento: {{articulo.memoria}} <br>
+
+            <!--<button (click)="addToCart(articulo)">Agregar al carrito</button><!--(click) es una invocacion de metodo-->
+        </h1>
+        <hr>
+        <div class="tres">
+    <button (click)="addToCart(articulo)">Agregar al carrito</button>
+    <button (click)="showCart()">Ver carrito</button>
+    <button (click)="deleteCart()">Vaciar carrito</button></div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>

@@ -1,0 +1,12 @@
+<div class="uno">
+<div class="dos" *ngFor="let articulo of EnVenta; index as articuloid"><!--ngfor se utuliza para ciclos-->
+    <br>
+    <h2>
+        <a [title]="articulo.nombre+articulo.color+articulo.precio" [routerLink]="['/EnVenta', articuloid]">
+            <img src={{articulo.imagen}} width="200" height="200"><br>
+            <h1>{{articulo.nombre}}</h1>
+        </a>
+        <hr>
+    </h2>
+</div>>
+</div>

@@ -1,0 +1,12 @@
+<div class="uno">
+<div class="dos" *ngFor="let tarifa of Servicios"><!--ngfor se utuliza para ciclos-->
+    <h1>
+        tiempo: {{tarifa.tiempo}} <br>
+        con 1 control: {{tarifa.precio1 | currency}} <br>
+        con 2 controles: {{tarifa.precio2 | currency}}<br>
+        con 1 cascos gamer: {{tarifa.precio3 | currency}}<br>
+        con 2 cascos gamer: {{tarifa.precio4 | currency}}<br>
+    </h1>
+    <hr>
+</div>
+</div>
